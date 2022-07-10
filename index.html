@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link name="text/css" rel="stylesheet" href="main.css">
+    <link name="text/css" rel="stylesheet" href="responsive.css">
+    <title>Film Archive</title>
+
+</head>
+
+
+<body>
+<div id="container">
+    <div class="form-container">
+    <div class="form wrapping" id="parrent-of-form1">
+        <form class="wrapping" id="add-to-movies">
+            <label class="form-input-label" for="title"><div class="box inputbox"><input class="addinput" type="text" id="title" name="title" placeholder="Movie Name"></div></label>
+            <label class="form-input-label" for="Director"><div class="box inputbox"><input class="addinput" type="text" id="Director" name="Director" placeholder="Movie Director"></div></label>
+            <label class="form-input-label" for="Poster"><div class="box inputbox"><input class="addinput" type="text" id="Poster" name="Poster" placeholder="Movie Poster URL"></div></label>
+            <button class="box black" >Add Movie</button>
+        </form>
+    </div>
+</div>
+<div class="wrapping" id="movies-container">
+
+</div>
+</body>
+
+<script src="storage.js"></script>
+<script src="film.js"></script> 
+<script src="ui.js"></script>
+<script src="project.js"></script>
+<script src="responsive.js"></script>
+
+</html>

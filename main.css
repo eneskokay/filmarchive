@@ -1,0 +1,156 @@
+* {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background: rgba(14, 46, 143, 1.0);
+    background: -webkit-linear-gradient(top left, rgba( ), rgba(255, 187, 189, 1.0));
+    background: -moz-linear-gradient(top left, rgba(14, 46, 143, 1.0), rgba(255, 187, 189, 1.0));
+    background: linear-gradient(to bottom right, rgba(14, 46, 143, 1.0), rgba(255, 187, 189, 1.0));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#container {
+    width: 60%;
+    max-width: 910px;
+    min-width: 330px;
+	height:min-content;
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	margin:auto;
+}
+
+.wrapping {
+    width: 800px;
+    display: flex;    
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.inputbox {
+cursor:text;
+}
+.addinput:focus::placeholder{ 
+    color: white;
+}
+.addinput:focus{
+    color: white;
+}
+.inputbox:focus-within {
+    background-color: rgba(0,0,0,0);
+}
+
+.form-input-label {
+    border-radius: 25px;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 45px;
+    border-radius: 25px;
+    background-color: white;
+    align-items: center;
+    margin: 8px 10px;
+    box-shadow: 0px 0px 8px 0px black;
+}
+.black {
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 0px;
+}
+
+.black:hover {
+    background-color: rgb(22, 22, 22);
+}
+
+.addinput {
+    background-color:rgba(0,0,0,0);
+    border: 0px;
+    width: 90%;
+    height: 15px;
+}
+.addinput::placeholder{
+    font-size: 0.9rem;
+}
+
+.addinput:focus {
+    outline: none;
+}
+
+
+
+.movies-container {
+    margin-top: 1.3rem;
+}
+.movie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: min-content;
+    margin: 1rem;
+}
+.poster {
+    height:200px;
+}
+.poster img {
+    box-shadow: 0px 0px 15px 0px;
+    height: 100%;
+}
+.movie-infos {
+    text-align: center;
+}
+.movie-name {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-bottom: 1px;
+    margin-top: 10px;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+}
+.movie-director {
+    color: white;
+    margin-top: 1px;
+    text-shadow: 0px 0px 5px black;
+}
+
+.remover {
+    width: 130px;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.remover:hover {
+    background-color: rgb(231, 231, 231);
+}
+.remover p {
+    font-size: 1rem;
+    font-weight:bolder;
+}
+.remover svg {
+    fill: black;
+    width: 23px;
+    height: 26px;
+}
+#remove-icon {
+    transform: scale(0.05);
+}
+
+#error {
+    margin-top: 5px;
+    text-align: center;
+    color:red;
+    text-shadow: 0px 0px 10px black;
+}
